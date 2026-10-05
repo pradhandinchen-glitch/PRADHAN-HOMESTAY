@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View your Pradhan Homestay booking requests.">
+  <meta name="theme-color" content="#12364a">
+  <title>My account | Pradhan Homestay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="topbar"><div class="container topbar-inner"><span>Badamtam · Naya Busty · Lebong</span><span>+91 98324 61284 <i></i> hello@pradhanhomestay.com</span></div></div>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Pradhan Homestay home"><span class="brand-mark">PH</span><span><b>Pradhan</b><small>Homestay</small></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+      <nav class="site-nav" data-nav><a href="index.html">Home</a><a href="rooms.html">Rooms & Suites</a><a href="dining.html">Dining</a><a href="events.html">Meetings & Events</a><a href="gallery.html">Gallery</a><a href="attractions.html">Attractions</a><a href="contact.html">Contact</a><a class="nav-cta" href="index.html#booking">Book now <span>↗</span></a></nav>
+    </div>
+  </header>
+  <main class="account-main">
+    <div class="container">
+      <div class="account-heading">
+        <div><p class="eyebrow">Your Pradhan stays</p><h1>My <em>account.</em></h1></div>
+        <button class="button button-outline" type="button" data-sign-out hidden>Sign out</button>
+      </div>
+      <p class="account-message" data-account-message aria-live="polite">Loading your booking requests…</p>
+      <div class="account-list" data-account-list></div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-bottom"><span>© 2025 Pradhan Homestay</span><span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span><span>Made for mountain days <b>✦</b></span></div></footer>
+  <script type="module" src="account.js"></script>
+</body>
+</html>

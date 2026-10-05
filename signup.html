@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your Pradhan Homestay account.">
+  <meta name="theme-color" content="#12364a">
+  <title>Create an account | Pradhan Homestay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <script defer src="script.js"></script>
+  <script type="module" src="auth.js"></script>
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Pradhan Homestay home"><span class="brand-mark">PH</span><span><b>Pradhan</b><small>Homestay</small></span></a>
+      <a class="auth-home-link" href="index.html">Back to home <span>↗</span></a>
+    </div>
+  </header>
+  <main class="auth-main">
+    <section class="auth-card" aria-labelledby="auth-title">
+      <p class="eyebrow">Make yourself at home</p>
+      <h1 id="auth-title">Create your<br><em>account.</em></h1>
+      <p class="auth-intro">Set up an account to request a stay and keep your booking details together.</p>
+      <form class="auth-form" data-auth-form="signup">
+        <label>Your name<input name="name" type="text" autocomplete="name" required maxlength="100"></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+        <label>Password<input name="password" type="password" autocomplete="new-password" required minlength="8"></label>
+        <button class="button button-gold" type="submit">Create account <span>↗</span></button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+    </section>
+  </main>
+  <footer class="auth-footer"><a href="terms.html">Terms</a><span>·</span><a href="privacy.html">Privacy</a></footer>
+</body>
+</html>

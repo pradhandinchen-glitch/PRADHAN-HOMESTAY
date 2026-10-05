@@ -1,0 +1,211 @@
+.auth-page .site-header {
+  position: relative;
+  background: var(--ink-deep);
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.auth-home-link {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.auth-home-link span {
+  color: var(--gold-light);
+  margin-left: 7px;
+}
+
+.auth-main {
+  display: grid;
+  min-height: calc(100vh - 130px);
+  place-items: center;
+  padding: 64px 24px;
+  background:
+    linear-gradient(135deg, rgba(232, 240, 237, .9), rgba(248, 246, 240, .97)),
+    url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+
+.auth-card {
+  width: min(100%, 480px);
+  padding: clamp(30px, 7vw, 58px);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.auth-card h1 {
+  margin-bottom: 18px;
+  font-size: clamp(42px, 8vw, 62px);
+}
+
+.auth-card h1 em {
+  color: var(--coral);
+}
+
+.auth-intro {
+  max-width: 340px;
+  color: #60777c;
+  font-size: 14px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 17px;
+  margin-top: 28px;
+}
+
+.auth-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.auth-form input {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.auth-form input:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.auth-form .button {
+  justify-self: start;
+  min-height: 48px;
+  margin-top: 4px;
+}
+
+.auth-form .form-message {
+  min-height: 1.6em;
+  margin: 0;
+  color: var(--coral);
+  font-size: 13px;
+}
+
+.auth-switch {
+  margin: 22px 0 0;
+  color: #60777c;
+  font-size: 13px;
+}
+
+.auth-switch a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.auth-footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  color: #60777c;
+  font-size: 11px;
+}
+
+.booking-payment-note {
+  margin: 4px 0 16px;
+  color: #dbe7e5;
+  font-size: 12px;
+}
+
+.booking-form .form-message {
+  color: #f0d49a;
+  font-size: 13px;
+}
+
+.booking-form button:disabled,
+.auth-form button:disabled {
+  cursor: wait;
+  opacity: .7;
+}
+
+.account-main {
+  min-height: 60vh;
+  padding: 80px 0;
+}
+
+.account-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 38px;
+}
+
+.account-heading h1 {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 64px);
+}
+
+.account-heading h1 em {
+  color: var(--coral);
+}
+
+.account-list {
+  display: grid;
+  gap: 14px;
+}
+
+.account-booking {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.account-booking h2 {
+  margin: 0 0 7px;
+  font-family: var(--serif);
+  font-size: 23px;
+}
+
+.account-booking p {
+  margin: 0;
+  color: #60777c;
+  font-size: 13px;
+}
+
+.account-booking-status {
+  align-self: center;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.account-message {
+  color: #60777c;
+}
+
+@media (max-width: 600px) {
+  .auth-main {
+    min-height: calc(100vh - 110px);
+    padding: 40px 18px;
+  }
+
+  .account-main {
+    padding: 56px 0;
+  }
+
+  .account-booking {
+    grid-template-columns: 1fr;
+  }
+
+  .account-booking-status {
+    text-align: left;
+  }
+}

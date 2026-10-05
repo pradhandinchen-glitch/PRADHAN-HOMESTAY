@@ -1,6 +1,12 @@
 const menuToggle = document.querySelector('[data-menu-toggle]');
 const nav = document.querySelector('[data-nav]');
 if (menuToggle && nav) {
+  const accountLink = document.createElement('a');
+  accountLink.href = 'account.html';
+  accountLink.textContent = 'My account';
+  const bookingLink = nav.querySelector('.nav-cta');
+  nav.insertBefore(accountLink, bookingLink || null);
+
   menuToggle.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
     menuToggle.setAttribute('aria-expanded', String(open));
@@ -22,6 +28,8 @@ if (slides.length && nextSlide) {
 }
 
 document.querySelectorAll('[data-demo-form]').forEach((form) => {
+  if (form.matches('[data-booking-form]')) return;
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const message = form.querySelector('.form-message');
